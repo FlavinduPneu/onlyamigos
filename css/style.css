@@ -1,0 +1,15 @@
+/* -----Aba de utilitarios -----*/
+@import "utilitarios/btn.css";
+
+/* -----Aba de globais -----*/
+@import "globais/globais.css";
+@import "globais/header.css";
+@import "globais/footer.css";
+
+/* -----Aba da home -----*/
+@import "home/home.css";
+@import "home/cards.css";
+@import "home/imgCards.css";
+
+/* -----Aba do forms -----*/
+@import "forms/forms.css";

@@ -1,0 +1,25 @@
+.forms {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 60px auto;
+}
+iframe {
+  padding-bottom: 10px;
+}
+.contatoForms{
+  margin-top: 60px;
+}
+
+@media (max-width: 860px) {
+  iframe {
+    width: 400px;
+    overflow: hidden;
+  }
+}
+@media (max-width: 400px) {
+  iframe {
+    width: 280px;
+    overflow: hidden;
+  }
+}

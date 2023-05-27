@@ -1,0 +1,79 @@
+.containerInicial {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  justify-items: start;
+  gap: 200px;
+}
+
+.titleContainer h1 {
+  font-size: 2.5rem;
+}
+.titleContainer p {
+  margin-top: 8px;
+  font-weight: 600;
+}
+
+.inicialContato {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 16px;
+}
+.inicialContato h2 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #000;
+}
+.inicialContato p {
+  font-size: 0.9rem;
+  color: #2076d3;
+}
+.iContato-img img {
+  width: 40px;
+  border-radius: 200px;
+}
+
+.textoFinal {
+  margin: 36px 0;
+  font-size: 0.54rem;
+}
+
+@media (max-width: 1000px) {
+  .containerInicial {
+    margin-top: 45px;
+    gap: 100px;
+  }
+}
+
+@media (max-width: 860px) {
+  .containerInicial {
+    margin-top: 32px;
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .titleContainer h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .containerInicial {
+    margin-top: 16px;
+    gap: 24px;
+  }
+
+  .titleContainer h1 {
+    font-size: 1.5rem;
+  }
+  .titleContainer p {
+    font-size: 0.9rem;
+  }
+
+  .inicialContato h2,
+  .inicialContato p {
+    font-size: 0.7rem;
+  }
+}

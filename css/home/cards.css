@@ -1,0 +1,123 @@
+.containerCards {
+  margin: 60px auto;
+  display: grid;
+  grid-template-columns: 450px 450px;
+  gap: 16px;
+
+  align-items: self-start;
+  justify-content: center;
+  justify-items: center;
+}
+.card {
+  width: 400px;
+  height: 320px;
+  background: #fff;
+  padding: 32px;
+  border-radius: 12px;
+
+  display: flex;
+  flex-direction: column;
+}
+.card:hover,
+.cardMaior:hover {
+  top: -1px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.containerCards span {
+  color: #77777b;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+.containerCards h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.containerCards ul {
+  color: #1d1d1f;
+  font-size: 0.95rem;
+  margin-bottom: 32px;
+}
+.card ul {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.containerCards li {
+  padding: 2px 8px;
+}
+.containerCards li:hover {
+  padding: 2px 8px;
+  border-radius: 4px;
+  background-color: #dbdbdb;
+}
+.cardMaior {
+  grid-column: span 2;
+
+  margin: auto;
+  width: 860px;
+  background: #fff;
+  padding: 32px;
+  border-radius: 12px;
+
+  display: flex;
+  flex-direction: column; 
+}
+.lista_CardMaior {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 16px;
+  justify-items: start;
+}
+.btnAtencao {
+  width: 80px;
+  font-size: 14px;
+  padding: 4px;
+  position: absolute;
+  right: -25px;
+  top: -12px;
+  text-align: center;
+  border-radius: 25px;
+  transform: rotate(20deg);
+  background: #0069d9;
+  color: #fff !important;
+}
+
+
+
+@media (max-width: 900px) {
+  .containerCards {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .cardMaior {
+    width: 400px;
+    grid-template-columns: 1fr;
+    grid-column: span 1;
+  }
+  .lista_CardMaior {
+    grid-template-columns: auto;
+  }
+}
+
+@media (max-width: 400px) {
+  .containerCards span {
+    font-size: 0.7rem;
+  }
+  .containerCards h3 {
+    font-size: 1rem;
+  }
+  .containerCards ul {
+    font-size: 0.8rem;
+  }
+  .card {
+    width: 90%;
+    padding: 16px;
+  }
+  .cardMaior {
+    width: 90%;
+    padding: 16px;
+  }
+}
+

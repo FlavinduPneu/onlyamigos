@@ -1,0 +1,52 @@
+.header {
+  width: auto;
+  height: 44px;
+
+  display: flex;
+  justify-content: space-between;
+}
+.navbar ul {
+  height: 44px;
+  display: flex;
+  justify-content: space-between;
+
+  max-width: 1024px;
+  padding: 0 20px;
+}
+.navbar  a {
+  cursor: pointer;
+  font-size: 0.75rem;
+  color: #000;
+
+  display: flex;
+  align-items: center;
+
+  padding: 9px;
+}
+.svg-header {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.header-acess {
+  gap: 40px;
+  display: flex;
+}
+.header-menu {
+  display: none;
+}
+
+@media (max-width: 860px) {
+  .header {
+    justify-content: space-between;
+  }
+  .navbar ul {
+    display: none;
+  }
+  .header-acess {
+    gap: 24px;
+  }
+  .header-menu {
+    display: flex;
+  }
+}
